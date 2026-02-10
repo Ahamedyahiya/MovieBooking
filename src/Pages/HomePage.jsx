@@ -31,8 +31,8 @@ useEffect(()=>{
  return (
     <>
     <div>
-       <div className="container mt-5 p-0">
-            <div className="row  m-0">
+       <div className="container mt-2 p-0">
+            <div className="row g-5 m-0">
                  {dataList.map((item,index)=>(
                      <div className="col-sm-12 col-md-4 col-lg-4" key={index}>
                           <CardList

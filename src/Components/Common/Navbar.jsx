@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar sticky-top">
+    <nav className="navbar navbar-expand-lg custom-navbar px-2 sticky-top">
       <div className="navbar-logo">
          <Link className="navbar-brand fw-bold text-white" to="/">
         🎬 PSA
