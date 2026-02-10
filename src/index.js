@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import  CartProvider  from "./Components/Context/CartContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <GoogleOAuthProvider clientId="167803032502-60kv4khc72e90svqobj00pf6khn0u5d1.apps.googleusercontent.com">
+      <CartProvider>
+        <App />
+      </CartProvider>
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+

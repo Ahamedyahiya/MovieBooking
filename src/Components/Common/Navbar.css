@@ -1,0 +1,70 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.navbar-logo{
+   margin-left:20px;
+}
+.nav-link {
+  color: #eaeaea !important;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00e5ff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  width: 250px;      
+}
+
+.search-input:focus {
+  box-shadow: 0 0 8px #00e5ff;
+}
+
+.btn-login {
+  background: #00e5ff;
+  padding: 6px 15px;
+  font-weight: 600;
+  margin-right:10px;
+  border: none;
+}
+
+.btn-login:hover {
+  background: #00bcd4;
+}  
+
+.user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}

@@ -1,0 +1,21 @@
+.cart-card {
+  border-radius: 15px;
+}
+
+.cart-img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.qty-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+
+}
+
+.qty-count {
+  font-size: 20px;
+  font-weight: bold;
+}
